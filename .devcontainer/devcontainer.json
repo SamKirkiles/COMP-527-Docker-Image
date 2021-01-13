@@ -1,0 +1,5 @@
+{"name": "Tutch",
+"dockerFile":"Dockerfile",
+ "remoteUser": "root",
+"extensions": [""]}
+
