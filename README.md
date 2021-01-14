@@ -10,6 +10,8 @@ Prerequisites: make sure docker is installed on your machine (any OS)
 2. cd into `.devconainer` and run `docker build -t tutch .`
 3. Run `docker run -it --rm --name tutch -v <FULL PATH TO MOUNT TO IMAGE>:/root/ tutch` to open a shell in your docker container.
 
+
+### Example
 For example, I would like to mount my tuch_files folder located at `/Users/samkirkiles/Documents/COMP-527-Docker-Image/tutch_files`
 
 So I would run `docker run -it --rm --name tutch -v /Users/samkirkiles/Documents/COMP-527-Docker-Image/tutch_files:/root/ tutch`
