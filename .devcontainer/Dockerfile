@@ -10,6 +10,8 @@ RUN apt-get install -y wget build-essential
 # Install `multilib` for 32-bit support that SML/NJ requires.
 RUN apt-get install -y gcc-multilib g++-multilib
 
+# Install vim
+RUN apt-get install -y vim
 
 # Get the source
 RUN wget http://smlnj.cs.uchicago.edu/dist/working/110.78/config.tgz
@@ -37,3 +39,4 @@ RUN wget http://www.cse.chalmers.se/~abela/tutch/tutch-0.53-for-sml-110.45.tar.g
 RUN cd tutch-0.53 && make
 ENV PATH="/usr/local/tutch-0.53/bin:${PATH}"
 
+WORKDIR ~
