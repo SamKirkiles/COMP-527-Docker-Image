@@ -8,4 +8,4 @@ Prerequisites: make sure docker is installed on your machine (any OS)
 
 1. Clone the repo anywhere 
 2. cd into `.devconainer` and run `docker build -t tutch .`
-3. Run `docker run -it tutch` to open a shell in your docker container. 
+3. Run `docker run -it --rm --name tutch -v <full path to tutch_files folder>:/root/ tutch` to open a shell in your docker container.
