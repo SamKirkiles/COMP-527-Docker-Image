@@ -1,6 +1,6 @@
 # COMP 527 Docker Image
 
-Creates a docker container with SML and Tutch pre installed.
+Creates a docker container with SML and Tutch 0.53 pre installed.
 
 ## Using Tutch with vim/emacs
 
